@@ -6,13 +6,19 @@ import java.util.Date;
 
 import co.edu.unbosque.model.CarDAO;
 import co.edu.unbosque.model.CarDTO;
+import co.edu.unbosque.view.MainWindow;
 
 public class Controller implements ActionListener{
 	
 	private CarDAO cdao;
+	private MainWindow mw;
 	
 	public Controller() {
 		cdao = new CarDAO();
+		mw = new MainWindow();
+		
+		
+		agregarLectores();
 	}
 	
 	public void run() {
