@@ -38,6 +38,11 @@ public class CarDAO {
 		escribirArchivo();
 	}
 	
+	public void actualizar(int index, CarDTO nuevoCarro) {
+		lista.replace(index, nuevoCarro);
+		escribirArchivo();
+	}
+	
 	public String mostrar() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Carros:\n");
