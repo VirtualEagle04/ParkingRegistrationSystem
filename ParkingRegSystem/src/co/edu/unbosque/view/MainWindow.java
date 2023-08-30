@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 public class MainWindow extends JFrame {
 
 	private PrincipalPanel pp;
-	
+
 	public MainWindow() {
 
 		setSize(750, 480);
@@ -14,14 +14,21 @@ public class MainWindow extends JFrame {
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		
+
 		pp = new PrincipalPanel();
-		
+
 		add(pp).setVisible(true);
-		
+
 		setVisible(true);
-		
-		
+
+	}
+
+	public PrincipalPanel getPp() {
+		return pp;
+	}
+
+	public void setPp(PrincipalPanel pp) {
+		this.pp = pp;
 	}
 
 }
